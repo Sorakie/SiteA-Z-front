@@ -103,7 +103,7 @@ Le but est d'afficher les informations de l'utilisateur.
 vous devez récupérer les informations de l'utilisateur, pour cela, utilisez Axios.
 Comme il s'agit d'une requête qui vous permet d'accéder à des informations utilisateur, vous aurez besoin d'envoyer le token que vous avez réussi à obtenir précédemment.
 
-	URL: <BASIC URL> + '/api/me'
+	URL: <BASIC URL> + '/api/authme'
 	Method: GET
 	Authorization: Bearer <TOKEN>
 Si votre requête est un succès, vous recevrez vos informations, vous devez maintenant les afficher.
