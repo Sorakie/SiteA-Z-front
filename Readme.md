@@ -103,7 +103,7 @@ Le but est d'afficher les informations de l'utilisateur.
 vous devez récupérer les informations de l'utilisateur, pour cela, utilisez Axios.
 Comme il s'agit d'une requête qui vous permet d'accéder à des informations utilisateur, vous aurez besoin d'envoyer le token que vous avez réussi à obtenir précédemment.
 
-	URL: <BASIC URL> + '/api/authme'
+	URL: <BASIC URL> + '/api/me'
 	Method: GET
 	Authorization: Bearer <TOKEN>
 Si votre requête est un succès, vous recevrez vos informations, vous devez maintenant les afficher.
@@ -147,10 +147,6 @@ Pour ne pas changer, utilisez Axios pour demander au serveur la suppression du c
 
 	URL: <BASIC URL> + '/api/delete'
 	Method: POST
-	Params: {
-	    firstname: <prénom>
-	    lastname: <nom>
-	}
 	Authorization: Bearer <token>
 
 Pour ne pas supprimer votre compte par mégarde, je vous propose d'ajouter une sécurité à votre bouton.
