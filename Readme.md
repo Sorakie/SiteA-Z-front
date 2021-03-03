@@ -146,7 +146,11 @@ Ajoutez un bouton, qui vous permet de supprimer votre compte.
 Pour ne pas changer, utilisez Axios pour demander au serveur la suppression du compte.
 
 	URL: <BASIC URL> + '/api/delete'
-	Method: GET
+	Method: POST
+	Params: {
+	    firstname: <prénom>
+	    lastname: <nom>
+	}
 	Authorization: Bearer <token>
 
 Pour ne pas supprimer votre compte par mégarde, je vous propose d'ajouter une sécurité à votre bouton.
