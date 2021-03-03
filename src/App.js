@@ -8,12 +8,8 @@ function App() {
   return (
     <Router history={history}>
       <Switch>
-        <Route exact path="/">
-          <Log />
-        </Route>
-        <Route path='/Home'>
-          <Home />
-        </Route>
+        <Route exact path="/" component={Log} />
+        <Route path="/Home" component={Home} />
       </Switch>
     </Router>
   );
